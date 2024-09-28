@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px) {
+  .share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin: 0;
+      margin-bottom: 0.5em;
+      background-color: aliceblue;
+      border-radius: var(--borderRadius);
+      padding: 0.5em 0.5em;
+      width: 80vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .buttonCopy {
+        background-color: var(--buttonColor);
+        color: white;
+        border: none;
+        border-radius: var(--borderRadius);
+        padding: 1em 2em;
+        transition: 0.5s;
+      }
+      .buttonCopy:hover {
+        background-color: var(--buttonHoverColor);
+        transition: 0.5s;
+      }
+    }
+    .icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 30vw;
+      max-height: 5vh;
+      svg {
+        height: 5vh;
+        width: fit-content;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+    .share {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        p {
+          margin: 0;
+          background-color: aliceblue;
+          border-radius: var(--borderRadius);
+          padding: 0.5em 0.5em;
+          width: 80vw;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .buttonCopy {
+            background-color: var(--buttonColor);
+            color: white;
+            border: none;
+            border-radius: var(--borderRadius);
+            padding: 1em 2em;
+            transition: 0.5s;
+          }
+          .buttonCopy:hover {
+            background-color: var(--buttonHoverColor);
+            transition: 0.5s;
+          }
+        }
+        .icons {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          width: 30vw;
+          max-height: 5vh;
+          svg {
+            height: 5vh;
+            width: fit-content;
+            border-radius: 50%;
+          }
+        }
+      }
+}
