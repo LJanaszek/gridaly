@@ -39,8 +39,6 @@ export default function ShareArticle() {
             <CopyToClipboardButton content={url} />
         </p>
         <div className={style.icons}>
-
-
             <FacebookShareButton
                 url={url}
             >
